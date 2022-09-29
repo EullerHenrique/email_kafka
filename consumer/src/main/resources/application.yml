@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+     url: jdbc:postgresql://localhost:5432/db
+     username: euller
+     password: 12345
+     driverClassName: org.postgresql.Driver
+  sql:
+      init:
+        platform: postgres
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: testeuseremail123@gmail.com
+    password: piusvvhinhxswngq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
+
+
