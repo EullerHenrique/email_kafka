@@ -1,12 +1,11 @@
 package com.kafka.consumer.domain.dto;
-
+import com.kafka.consumer.domain.enums.StatusEmail;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -14,17 +13,12 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class EmailDTO {
 
-    @NotBlank
     private String ownerRef;
-    @NotBlank
-    @Email
     private String emailFrom;
-    @NotBlank
-    @Email
     private String emailTo;
-    @NotBlank
     private String subject;
-    @NotBlank
     private String text;
+    private LocalDateTime sendDateEmail;
+    private StatusEmail statusEmail;
 
 }

@@ -6,4 +6,4 @@ spring:
       security.protocol: 'PLAINTEXT'
     bootstrap-servers: localhost:29092
 topic:
-  name: email
+  name: email-topic

@@ -15,4 +15,5 @@ public class EmailController {
     public void sendProjectStatusEmail(@RequestBody EmailDTO emailDTO) {
         kafkaProducerService.send(emailDTO);
     }
+
 }

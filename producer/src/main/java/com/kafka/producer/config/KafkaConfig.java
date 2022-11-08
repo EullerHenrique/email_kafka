@@ -27,7 +27,7 @@ public class KafkaConfig {
 
     @Bean
     public NewTopic createTopic() {
-        return new NewTopic(topic, 4, Short.parseShort("4"));
+        return new NewTopic(topic, 3, (short) 1);
     }
 
     @Bean

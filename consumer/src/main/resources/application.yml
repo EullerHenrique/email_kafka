@@ -29,5 +29,12 @@ spring:
             required: true
           ssl:
             trust: smtp.gmail.com
-
-
+  kafka:
+    properties:
+      security.protocol: 'PLAINTEXT'
+    bootstrap-servers: localhost:29092
+    group-id: email-group
+topic:
+  name: email-topic
+server:
+    port: 8081
